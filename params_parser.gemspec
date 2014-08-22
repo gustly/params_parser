@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["pdswan@gmail.com", "todd@gust.com"]
   spec.summary       = %q{Parse Parameters with key mapping, transformation, and defaults.}
   spec.description   = %q{Parse Parameters with key mapping, transformation, and defaults.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/gustly/params_parser"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
