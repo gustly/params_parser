@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gustly/params_parser.svg?branch=master)](https://travis-ci.org/gustly/params_parser)
+
 # ParamsParser
 
 `ParamsParser` is a simple gem to help - you guessed it - parse parameter hashes.
