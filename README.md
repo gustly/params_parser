@@ -1,6 +1,13 @@
 # ParamsParser
 
-TODO: Write a gem description
+`ParamsParser` is a simple gem to help - you guessed it - parse parameter hashes.
+
+`ParamsParser` currently supports:
+
+* defaults
+* transformations
+* mapping input keys to output keys
+
 
 ## Installation
 
@@ -18,7 +25,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a parser with a configuration hash:
+
+```ruby
+parser = ParamsParser::Parser.new({
+  id: { transform: Model.public_method(:find), map_to: :model }
+  page: { default: 1, transform: :to_i.to_proc }
+})
+```
+
+Parse parameters:
+
+```ruby
+parser.parse({        # {
+  id: "1",            #   model: Model(...),
+  page: "5"           #   page: 5
+})                    # }
+```
+
+```ruby
+parser.parse({        # {
+  id: "1",            #   model: Model(...),           
+})                    #   page: 1
+                      # }
+```
 
 ## Contributing
 
