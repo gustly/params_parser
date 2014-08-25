@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "params_parser"
   spec.version       = ParamsParser::VERSION
   spec.authors       = ["Peter Swan", "Todd Mohney"]
-  spec.email         = ["pdswan@gmail.com", "todd@gust.com"]
+  spec.email         = ["pdswan@gmail.com", "toddmohney@gmail.com"]
   spec.summary       = %q{Parse Parameters with key mapping, transformation, and defaults.}
   spec.description   = %q{Parse Parameters with key mapping, transformation, and defaults.}
   spec.homepage      = "https://github.com/gustly/params_parser"
